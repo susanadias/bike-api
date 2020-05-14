@@ -4,9 +4,9 @@ CREATE TABLE bike
   email VARCHAR(20) not null,
   phone VARCHAR(25) NOT NULL,
   model VARCHAR(20),
-  serialNumber VARCHAR(25),
-  purpachePrice DECIMAL,
-  purpacheDate DATE,
+  serial_number VARCHAR(25),
+  purpache_price DECIMAL,
+  purpache_date DATE,
   contact BOOLEAN,
   CONSTRAINT id_pk PRIMARY KEY (id)
 );

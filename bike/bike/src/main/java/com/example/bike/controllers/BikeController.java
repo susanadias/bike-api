@@ -44,7 +44,9 @@ public class BikeController {
 	@ResponseStatus(HttpStatus.OK)
 	@ApiOperation(value = "Add an bike")
 	public void createBike(@ApiParam(value = "Bike object store in database table", required = true) @RequestBody Bike bike) {
+		System.out.println("Testar");
 		this.bikeRepository.save(bike);
+		System.out.println("fim");
 	}
 	
 	@ApiOperation(value = "Get an bike by Id")
